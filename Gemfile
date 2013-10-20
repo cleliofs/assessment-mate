@@ -46,3 +46,5 @@ end
 # gem 'debugger', group: [:development, :test]
 
 gem 'rails_12factor', group: :production
+
+gem 'sqlite3-ruby', '1.3.8', :group :development
