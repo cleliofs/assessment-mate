@@ -10,6 +10,7 @@ class QuestionsController < ApplicationController
   # GET /questions/1
   # GET /questions/1.json
   def show
+      @options = Question.find(params[:id]).options
   end
 
   # GET /questions/new

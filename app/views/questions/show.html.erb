@@ -10,5 +10,14 @@
   <%= @question.title %>
 </p>
 
+<% if !@options.blank? %>
+  <% for o in @options %>
+    <input type="checkbox" value="<%=o.id%>"><%= o.title %></input></br>
+  <% end %>
+<% else %>
+  
+<% end %>
+
+
 <%= link_to 'Edit', edit_question_path(@question) %> |
 <%= link_to 'Back', questions_path %>
